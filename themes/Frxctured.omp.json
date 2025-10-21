@@ -129,7 +129,7 @@
                         "fetch_virtual_env": true,
                         "fetch_version": true
                     },
-                    "template": " \ue235 "
+                    "template": " \ue235"
                 }
             ],
             "type": "prompt"
