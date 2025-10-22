@@ -30,7 +30,7 @@
                     "foreground": "p:text",
                     "powerline_symbol": "\ue0b4",
                     "style": "diamond",
-                    "template": "@ajan.zuberi",
+                    "template": "{{ if .SSHSession }}\ueba9 {{ .UserName }}@{{ .HostName }}{{ else }}@{{ .UserName }}{{ end }}",
                     "type": "session"
                 },
                 {
