@@ -30,7 +30,7 @@
                     "foreground": "p:text",
                     "powerline_symbol": "\ue0b4",
                     "style": "diamond",
-                    "template": "@ajan.zuberi",
+                    "template": "{{ if .SSHSession }}\ueba9 {{ .UserName }}@{{ .HostName }}{{ else }}@{{ .UserName }}{{ end }}",
                     "type": "session"
                 },
                 {
@@ -99,7 +99,7 @@
                     "foreground": "p:text",
                     "template": " {{ .CurrentDate | date \"15:04\" }}",
                     "properties": {
-                        "time_format": "15:04:05"
+                        "time_format": "15:04"
                     }
                 },
                 {
@@ -129,7 +129,7 @@
                         "fetch_virtual_env": true,
                         "fetch_version": true
                     },
-                    "template": " \ue235 "
+                    "template": " \ue235"
                 }
             ],
             "type": "prompt"
@@ -141,17 +141,8 @@
                 {
                     "foreground": "p:purple",
                     "style": "plain",
-                    "template": " \u2570\u2500",
+                    "template": " \u2570\u2500\uf101 ",
                     "type": "text"
-                },
-                {
-                    "foreground": "p:purple",
-                    "properties": {
-                        "always_enabled": true
-                    },
-                    "style": "plain",
-                    "template": "\uf101 ",
-                    "type": "status"
                 }
             ],
             "type": "prompt"
